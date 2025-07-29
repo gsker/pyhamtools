@@ -65,6 +65,7 @@ class Test_utils_freq_to_band():
         assert freq_to_band(1200000) == {"band" : 0.23, "mode":None}
 
     def test_shf_frequencies(self):
+        assert freq_to_band(2320200) == {"band" : 0.13, "mode":None}
         assert freq_to_band(2390000) == {"band" : 0.13, "mode":None}
 
         assert freq_to_band(3300000) == {"band" : 0.09, "mode":None}
